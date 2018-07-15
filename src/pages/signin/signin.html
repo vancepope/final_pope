@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="#a4451e">
+      <ion-buttons start color="#a4451e">
+          <button ion-button icon-only menuToggle>
+              <ion-icon name="menu"></ion-icon>
+          </button>
+      </ion-buttons>
+      <ion-title>Login</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="content"  padding>
+<ion-card>
+  <ion-card-content>
+    <!--Validates form data and signs in user-->
+          <form #f="ngForm" (ngSubmit)="onSignin(f)"> 
+            <ion-list>
+              <ion-item>
+                <ion-input text-input-highlight-color-valid= "secondary" type="text" placeholder="Email" ngModel name="email"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input text-input-highlight-color-invalid= "danger" type="password" ngModel name="password" placeholder="Password"></ion-input>
+              </ion-item>
+              <button ion-button item-right  type="submit" color="secondary" [disabled]="!f.valid">Login</button>
+              </ion-list>
+          </form>
+    <!--END signin user-->
+          </ion-card-content>
+</ion-card>
+</ion-content>

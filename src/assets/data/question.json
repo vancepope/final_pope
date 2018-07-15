@@ -1,0 +1,104 @@
+﻿{
+    "questions": [
+ 
+        {
+            "flashCardFront": "<img src='assets/imgs/druid-hp.png' />",
+            "flashCardBack": "Druid",
+            "flashCardFlipped": false,
+            "questionText": "What class does this belong to?",
+            "answers": [
+                {"answer": "Druid", "correct": true, "selected": false},
+                {"answer": "Paladin", "correct": false, "selected": false},
+                {"answer": "Warlock", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/hunter-hp.png' />",
+            "flashCardBack": "Hunter",
+            "flashCardFlipped": false,
+            "questionText": "What class does this belong to?",
+            "answers": [
+                {"answer": "Priest", "correct": false, "selected": false},
+                {"answer": "Hunter", "correct": true, "selected": false},
+                {"answer": "Warrior", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/mage-hp.png' />",
+            "flashCardBack": "Mage",
+            "flashCardFlipped": false,
+            "questionText": "What class does this belong to?",
+            "answers": [
+                {"answer": "Rogue", "correct": false, "selected": false},
+                {"answer": "Shaman", "correct": false, "selected": false},
+                {"answer": "Mage", "correct": true, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/paladin-hp.png' />",
+            "flashCardBack": "Paladin",
+            "flashCardFlipped": false,
+            "questionText": "What class does this belong to?",
+            "answers": [
+                {"answer": "Paladin", "correct": true, "selected": false},
+                {"answer": "Warlock", "correct": false, "selected": false},
+                {"answer": "Priest", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/priest-hp.png' />",
+            "flashCardBack": "Priest",
+            "flashCardFlipped": false,
+            "questionText": "What class does this belong to?",
+            "answers": [
+                {"answer": "Warlock", "correct": false, "selected": false},
+                {"answer": "Warrior", "correct": false, "selected": false},
+                {"answer": "Priest", "correct": true, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/rogue-hp.png' />",
+            "flashCardBack": "Rogue",
+            "flashCardFlipped": false,
+            "questionText": "What class does this belong to?",
+            "answers": [
+                {"answer": "Paladin", "correct": false, "selected": false},
+                {"answer": "Druid", "correct": false, "selected": false},
+                {"answer": "Rogue", "correct": true, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/shaman-hp.png' />",
+            "flashCardBack": "Shaman",
+            "flashCardFlipped": false,
+            "questionText": "What class does this belong to?",
+            "answers": [
+                {"answer": "Warrior", "correct": false, "selected": false},
+                {"answer": "Shaman", "correct": true, "selected": false},
+                {"answer": "Druid", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/warlock-hp.png' />",
+            "flashCardBack": "Warlock",
+            "flashCardFlipped": false,
+            "questionText": "What class does this belong to?",
+            "answers": [
+                {"answer": "Paladin", "correct": false, "selected": false},
+                {"answer": "Shaman", "correct": false, "selected": false},
+                {"answer": "Warlock", "correct": true, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/warrior-hp.png' />",
+            "flashCardBack": "Warrior",
+            "flashCardFlipped": false,
+            "questionText": "What class does this belong to?",
+            "answers": [
+                {"answer": "Warrior", "correct": true, "selected": false},
+                {"answer": "Paladin", "correct": false, "selected": false},
+                {"answer": "Rogue", "correct": false, "selected": false}
+            ]
+        }
+    ]
+}

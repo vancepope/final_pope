@@ -1,0 +1,20 @@
+<ion-header >
+  <ion-navbar color="#a4451e">
+    <ion-title>Hearthstone Cinematic Trailer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="content"  padding>
+  <ion-item>
+    <!--Displays video-->
+    <button id="video" (click)="playVideo()">
+        <video id="video" fullscreen="fullscreen" autoplay="true" (ended)="stopVideo()" controls>
+            <source src="assets/mp4/hearthstone.mp4" type="video/mp4">
+          </video>
+    </button>
+    <!--END video--> 
+  </ion-item>
+ 
+</ion-content>

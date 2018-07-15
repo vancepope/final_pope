@@ -1,0 +1,28 @@
+<ion-menu [content]="nav">
+    <ion-header>
+        <ion-toolbar color="#a4451e">
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list color="#fdf9f0">
+            <button ion-item icon-left (click)="onLoad(tabsPage)" *ngIf="isAuthenticated">
+                <ion-icon name="game-controller-a"></ion-icon>
+                Play Game
+            </button>
+            <button ion-item icon-left (click)="onLoad(signinPage)" *ngIf="!isAuthenticated">
+                <ion-icon name="log-in"></ion-icon>
+                Sign In
+            </button>
+            <button ion-item icon-left (click)="onLoad(registerPage)" *ngIf="!isAuthenticated">
+                <ion-icon name="person"></ion-icon>
+                Sign Up
+            </button>
+            <button ion-item icon-left (click)="onLogout()" *ngIf="isAuthenticated">
+                <ion-icon name="log-out"></ion-icon>
+                Log Out
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #nav></ion-nav>

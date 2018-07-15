@@ -1,0 +1,46 @@
+<ion-header >
+  <ion-navbar color="#a4451e">
+    <!--Displays a menu button-->
+      <ion-buttons start color="#a4451e">
+          <button ion-button icon-only menuToggle>
+              <ion-icon name="menu" ></ion-icon>
+          </button>
+      </ion-buttons>
+    <!--END menu button-->
+    <ion-title>
+      Hearthstone Trivia
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="content">
+  <ion-slides #slides>
+      <ion-slide class="start-slide">
+        <h1>Welcome to the Hearthstone Trivia game!</h1>
+          <button ion-button color="primary" (click)="nextSlide()">Start!</button>
+      </ion-slide>
+      <!--Displays questions-->
+      <ion-slide *ngFor="let question of questions; let i = index;">
+          <h3>Question {{i+1}}</h3>
+          <flashcard  [isFlipped]="question.flashCardFlipped">
+              <div class="flashFront" [innerHTML]="question.flashCardFront"></div>
+              <div class="flashBack" [innerHTML]="question.flashCardBack"></div>
+          </flashcard>
+          <h3>{{question.questionText}}</h3>
+          <ion-list radio-group>
+              <ion-item *ngFor="let answer of question.answers; let i = index;">
+                  <ion-label>{{i+1}}. {{answer.answer}}</ion-label>
+                  <ion-radio class="checkmark" (click)="select(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
+              </ion-item>
+          </ion-list>
+      </ion-slide>
+      <!-- END display questions -->
+      
+      <!--Displays score to user-->
+      <ion-slide>
+          <h2>Final Score: {{score}}</h2>
+          <button (click)="restart()" ion-button full>Start Again</button>
+      </ion-slide>
+      <!--END score to user-->
+  </ion-slides>
+</ion-content>
