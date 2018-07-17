@@ -50,7 +50,7 @@ import { WarriorPage } from '../pages/warrior/warrior';
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {tabsPlacement: 'bottom'})
   ],
   bootstrap: [IonicApp],
   entryComponents: [

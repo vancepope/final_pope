@@ -15,14 +15,19 @@
 
 
 <ion-content class="content"  padding>
-  <ion-item>
+  <ion-item text-center>
     <!--Displays video-->
-    <button id="video" (click)="playVideo()">
-        <video id="video" fullscreen="fullscreen" autoplay="true" (ended)="stopVideo()" controls>
-            <source src="assets/mp4/hearthstone.mp4" type="video/mp4">
-          </video>
+    <button ion-button (click)="playVideo()">
+      Play Video    
+    </button>
+    <button ion-button (click)="stopVideo()">
+      Stop Video 
     </button>
     <!--END video--> 
   </ion-item>
- 
+  <ion-item >
+      <video preload="metadata" id="video" preload="none" (ended)="stopVideo()" controls>
+          <source src="assets/mp4/hearthstone.mp4" type="video/mp4">
+        </video>
+  </ion-item>
 </ion-content>
