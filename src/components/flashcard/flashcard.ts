@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: 'flashcard.html'
 })
 export class FlashcardComponent {
- 
+ //From tutorial from JoshMorony.com
   @Input('isFlipped') flipCard: boolean;
  
   constructor() {

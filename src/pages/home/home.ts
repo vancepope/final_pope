@@ -5,6 +5,7 @@ import { DataProvider } from '../../providers/data/data';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+//From tutorial on JoshMorony.com
 export class HomePage {
     @ViewChild('slides') slides: any;
     hasAnswered: boolean = false;
